@@ -1,0 +1,249 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    
+}
+.story{
+    font-family: "Lora", "Slabo 27px", sans-serif;
+    font-size: 20px;
+    line-height: 1.8em;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    border-bottom: 2px #000 solid;
+    display: block;
+}
+#storytitle{
+    font-size: 30px;
+    font-weight: bold;
+}
+#storytitle a{
+    color:#000;
+}
+.story strong{
+    border-bottom: 2px #000 solid;
+    min-width: 60%;
+    display: inline-block;
+    margin-bottom: .5em;
+}
+.story strong a{
+    color: #000;
+}
+.story.continued{
+    margin-top: 50px;
+}
+#addsubmission{
+    width: 50%;
+    margin-left: 25%;
+}
+#addsubmission .submit-button{
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    background: transparent;
+    color: #000;
+    border: 2px solid #000;
+    font: 30px "Lato", sans-serif;
+    transition: all 0.3s;
+    margin-left: .8%;
+}
+#addsubmission .submit-button:hover{
+    color: #FFF;
+    background: #000;
+}
+#addsubmission #checkboxanon{
+    height: 20px;
+    width: 20px;
+    margin-left: 30px;
+    display: inline;
+    vertical-align: middle;
+    transition: all 0.3s;
+}
+#addsubmission label[for="checkboxanon"]{
+    display: inline-block;
+    margin-left: 10px;
+    font: 20px "Lato", sans-serif;
+    vertical-align: middle;
+}
+.tags-list .tag{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 17px;
+    background: #d6d6d6;
+    border-radius: 35px;
+    text-decoration: none;
+    color: #000;
+    font-family: "Lato", sans-serif;
+    margin-right: 5px;
+    margin-bottom: .5em;
+    transition: all 0.2s;
+}
+.tags-list .tag:hover{
+    background: #eaeaea;
+}
+.follow, .unfollow{
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px;
+    background: transparent;
+    color: #000;
+    border: 2px solid #000;
+    font: 20px "Lato", sans-serif;
+    transition: all 0.3s;
+}
+.follow:hover, .unfollow:hover{
+    background: #000;
+    color: #FFF;
+}
+button:active
+{
+    outline: none;
+}
+.icons{
+    display: inline-block;
+    margin-top: 10px;
+}
+.icons img{
+    height: 35px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.icons img:hover{
+    background: #c7c7c7;
+}
+.icon{
+    height: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    cursor: pointer;
+}
+#storytitle{
+    display: inline;
+    vertical-align: middle;
+}
+
+#showhidden{
+    font: 30px "Lato", sans-serif;
+    color: grey;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.collapsebutton{
+    padding: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-right: 15px;
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    font-size: 18px;
+    border: 1px grey solid;
+}
+.collapsebutton:active, .collapsebutton:focus{
+    outline: none;
+}
+#unapproved
+{
+    margin-bottom: 100px;
+}
+#overlay{
+    height: 100vh;
+    position: fixed;
+    overflow-y: scroll;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    left: -400%;
+}
+.overlayform .buttons{
+    width: 100%;
+    text-align: center;
+}
+.overlayform input[type='text']{
+    font-family: "Lora", "Slabo 27px", sans-serif;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 1.3vw;
+    text-align: left;
+    padding: 6px;
+}
+.overlayform textarea{
+    font-family: "Lora", "Slabo 27px", sans-serif;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 1.3vw;
+    height: 17em;
+    padding: 6px;
+}
+.overlayform button{
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    background: transparent;
+    color: #FFF;
+    border: 2px solid #FFF;
+    font: 30px "Lato", sans-serif;
+    transition: all 0.3s;
+    margin-left: .8%;
+}
+.overlayform button:hover{
+    color: #ff6464;
+    border-color: #ff6464;
+}
+#search{
+    width:100%;
+    text-align: center;
+    margin-top: 200px;
+}
+#search.searched{
+    margin-top: 100px;
+    margin-bottom:100px;
+}
+#search input[type='text']{
+    padding:15px;
+    font:30px "Lora", serif;
+    border-radius: 50px;
+    border:2px lightgrey solid;
+    transition: all 0.3s;
+}
+#search input[type='submit']{
+    padding:14px;
+    font:30px "Lora", serif;
+    color:#000;
+    border-radius: 50px;
+    border:2px #000 solid;
+    transition: all 0.3s;
+    cursor:pointer;
+    background: transparent;
+    margin-left: 23px;
+}
+#search input[type='submit']:hover{
+    background: #000;
+    color: #FFF;
+}
+#search input[type='text']:focus{
+    border:2px #000 solid;
+    outline: none;
+}
+#sortby{
+    float: right;
+    margin-right: 60px;
+}
+#sortby select, #sortby option{
+    font: 30px "Lato", sans-serif;
+    cursor:pointer;
+}

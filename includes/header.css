@@ -1,0 +1,176 @@
+body, html{
+    padding: 0;
+    margin:0;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+}
+header h1{
+    font: 50px "Lato", sans-serif;
+    margin-bottom: 0px;
+}
+header h1 a{
+    color:#000;
+    text-decoration: none;
+}
+
+nav li{
+    display: inline;
+    font-size: 40px;
+    vertical-align: middle;
+}
+nav a{
+    text-decoration: none;
+    font-family: "Slabo 27px", sans-serif;
+    color: #000;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    border-right: 2px #000 solid;
+    padding-right:15px;
+    padding-left:15px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+nav li:last-of-type a{
+    border: none;
+}
+nav .underline{
+    height: 4px;
+    background: #000;
+    width: 0%;
+    margin-left: 50%;
+    transition: all 0.17s;
+    transition-timing-function: cubic-bezier(.65,.51,.64,.92);
+}
+nav a:hover .underline{
+    width: 100%;
+    margin-left: 0%;
+}
+
+#myaccountlink, #loginlink{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 9999;
+    font: 30px "Lato", sans-serif;
+}
+#loginlink{
+    right: 30px;
+}
+#loginlink a{
+    color: #000;
+    text-decoration: none;
+}
+#myaccountlink div{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 5px;
+    width: 0px;
+    height: 0px;
+    border-top: 10px #000 solid;
+    border-bottom: 10px transparent solid;
+    border-right: 10px transparent solid;
+    border-left: 10px transparent solid;
+}
+#myaccountactionlist{
+    padding: 0;
+    position: absolute;
+    padding-bottom:0px;
+    top: 60px;
+    right: 15px;
+    background: #FFF;
+    text-align: center;
+    overflow:hidden;
+    border-radius: 3px;
+    
+-webkit-box-shadow: 0px 0px 24px -6px rgba(0,0,0,0.65);
+-moz-box-shadow: 0px 0px 24px -6px rgba(0,0,0,0.65);
+box-shadow: 0px 0px 24px -6px rgba(0,0,0,0.65);
+}
+#myaccountactionlist li{
+    list-style-type: none;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    display: block;
+}
+#myaccountactionlist a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 25px;
+}
+#myaccountactionlist li ~ li{
+/*    border-top: 1px #c8c8c8 solid;
+*/}
+#myaccountactionlist li:hover{
+    background: #e8e8e8;
+}
+
+header #nameimage{
+    height:90px;
+}
+
+
+
+.icons img:hover{
+    background: #dddddd;
+}
+.notfound{
+    padding-top: 100px;
+    font:40px "Slabo 27px", serif;
+    text-align: center;
+}
+.textinput{
+    font: 26px "Lato", sans-serif;
+    border: 2px lightgrey solid;
+    transition:border 0.3s;
+    padding:3px;
+}
+.textinput:focus{
+    outline:none;
+    border:2px #000 solid;
+}
+textarea.textinput{
+    width: 550px;
+    height: 200px;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+.card{
+    font: 23px "Lato", sans-serif;
+    width:80%;
+    margin-left: 10%;
+}
+.button{
+    background: transparent;
+    border: 2px #000 solid;
+    font: 23px "Lato", sans-serif;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.button:hover{
+    background: #000;
+    color:#FFF;
+}
+#error{
+    color:#FF0000;
+    padding-left: 15px;
+}
+.sectionheading{
+    font: 30px "Lora", "Slabo 27px", serif;
+    font-weight: bold;
+    text-align: center;
+}
+/*
+#container{
+    min-height: 100vh;
+}*/

@@ -1,0 +1,13 @@
+footer{
+    margin-top: 160px;
+    height: 200px;
+    width: 100%;
+    background: #dfdfdf;
+    font-family: "Lato", sans-serif;
+    color: #000;
+    text-align: center;
+}
+footer h1{
+    font-size: 50px;
+    padding-top: 80px;
+}

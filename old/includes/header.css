@@ -1,0 +1,92 @@
+header{
+    width: 100%;
+    text-align: center;
+}
+header h1{
+    
+    font: 50px "Lato", sans-serif;
+}
+nav li{
+    display: inline;
+    font-size: 40px;
+    vertical-align: middle;
+}
+nav a{
+    text-decoration: none;
+    font-family: "Slabo 27px", sans-serif;
+    color: #000;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+nav .underline{
+    height: 4px;
+    background: #000;
+    width: 0%;
+    margin-left: 50%;
+    transition: all 0.24s;
+    transition-timing-function: cubic-bezier(.65,.51,.64,.92);
+}
+nav a:hover .underline{
+    width: 100%;
+    margin-left: 0%;
+}
+#myaccountlink, #loginlink{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 9999;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+}
+#loginlink{
+    right: 30px;
+}
+#loginlink a{
+    color: #000;
+    text-decoration: none;
+}
+#myaccountlink div{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 5px;
+    width: 0px;
+    height: 0px;
+    border-top: 10px #000 solid;
+    border-bottom: 10px transparent solid;
+    border-right: 10px transparent solid;
+    border-left: 10px transparent solid;
+}
+#myaccountactionlist{
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background: #FFF;
+    text-align: center;
+    overflow: hidden;
+    border: 1px #c8c8c8 solid;
+    border-radius: 3px;
+}
+#myaccountactionlist li{
+    list-style-type: none;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    display: block;
+}
+#myaccountactionlist a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+#myaccountactionlist li ~ li{
+    border-top: 1px #c8c8c8 solid;
+}
+#myaccountactionlist li:hover{
+    background: #e8e8e8;
+}
